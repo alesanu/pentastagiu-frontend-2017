@@ -140,7 +140,8 @@ console.log("\n 11. Pentru exercitiul anterior, afisati corect forma acordului \
 
 var array = [0, "text", 9, undefined, "undefined", -5, null, "null"];
 for (var i in array) {
-    if (typeof(array[i]) === 'object' || typeof(array[i]) === 'undefined')
+    if ((typeof array[i]).charAt(0) === 'a' || (typeof array[i]).charAt(0) === 'e' || (typeof array[i]).charAt(0) === 'i'
+        || (typeof array[i]).charAt(0) === 'u' || (typeof array[i]).charAt(0) === 'o')
         console.log(array[i] + ' is an ' + typeof(array[i]));
     else
         console.log(array[i] + ' is a ' + typeof(array[i]));
